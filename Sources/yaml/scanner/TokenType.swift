@@ -1,10 +1,9 @@
 enum TokenType {
-
-    enum Encoding{
+    enum Encoding {
         case utf8
     }
 
-    enum ScalarStyle {    
+    enum ScalarStyle {
         case `Any`
         case Plain
         case SingleQuoted
@@ -31,9 +30,9 @@ enum TokenType {
     case FlowMappingEnd
     case BlockEntry
     case FlowEntry
-    case `Key`
-    case `Value`
-    case  Alias(String)
+    case Key
+    case Value
+    case Alias(String)
     case Anchor(String)
     /// handle, suffix
     case Tag(String, String)

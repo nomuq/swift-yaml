@@ -1,5 +1,4 @@
 extension Character {
-
     func isZ() -> Bool {
         self == "\0"
     }
@@ -9,7 +8,7 @@ extension Character {
     }
 
     func isBreakz() -> Bool {
-        is_break() || is_z()
+        isBreak() || isZ()
     }
 
     func isBlank() -> Bool {
@@ -17,7 +16,7 @@ extension Character {
     }
 
     func isBlankz() -> Bool {
-        is_blank() || is_breakz()
+        isBlank() || isBreakz()
     }
 
     func isDigit() -> Bool {
@@ -27,5 +26,4 @@ extension Character {
     func isHex() -> Bool {
         (self >= "0" && self <= "9") || (self >= "a" && self <= "f") || (self >= "A" && self <= "F")
     }
-
 }

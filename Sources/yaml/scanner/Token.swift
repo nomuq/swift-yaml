@@ -1,5 +1,4 @@
 struct Token {
-    var marker : Marker
+    var marker: Marker
     var tokenType: TokenType
 }
-
